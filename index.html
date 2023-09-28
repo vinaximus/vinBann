@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fontawesom Kit-->
+    
+
+</head>
+<body>
+    <nav class="nav-main">
+        <div class="logo-section">
+            vNB vinBann
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-component color-todo"></div>
+            <div class="filter-component color-wip"></div>
+            <div class="filter-component color-test"></div>
+            <div class="filter-component color-done"></div>
+        </div>
+        
+        <div class="quickbuttons">
+            <div id="new-card" class="icon">+</div>
+            <div id="delete-card" class="icon">X</div>
+        </div>
+    </nav>
+
+
+    <div class="card-container">
+        <div class="card">
+            <div class="colorbar">WIP</div>
+            <div class="title">Solve LeetCode</div>
+            <div class="description">Solve atleast 4 problems. You must solve hard problems.
+                If you still find it hard. Try solving blind folded.
+            </div>
+            
+        </div>
+    </div>
+
+    <!--Floating Windows-->
+    <div class="card-edit">
+        <div class="text-section">
+            <input type="text" id="fld-title">
+            <textarea id="fld-description" ></textarea>
+        </div>
+        
+        <div class="color-section">
+            <div class="color-section-selector color-todo"></div>
+            <div class="color-section-selector color-wip"></div>
+            <div class="color-section-selector color-test"></div>
+            <div class="color-section-selector color-done"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
