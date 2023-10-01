@@ -16,19 +16,41 @@
             vNB vinBann
         </div>
 
-        <div class="filter-section">
-            <div class="filter-component color-todo"></div>
-            <div class="filter-component color-wip"></div>
-            <div class="filter-component color-test"></div>
-            <div class="filter-component color-done"></div>
-        </div>
+       
         
         <div class="quickbuttons">
-            <div id="new-card" class="icon">+</div>
-            <div id="delete-card" class="icon">X</div>
+            <div id="new-card" class="btn-main">New Task</div>
+            
         </div>
-    </nav>
 
+        
+    </nav>
+    
+    <div class="filter-section">
+        <div class="color-todo">Start</div>
+        <div class="color-wip">In Progress</div>
+        <div class="color-test">Testing</div>
+        <div class="color-done">Done</div>
+    </div>
+
+    
+
+    <!--Floating Windows-->
+    <div class="card-edit">
+        <div class="text-section">
+            <span>Task</span>    
+            <input type="text" placeholder="Title" id="fld-title">
+            <textarea placeholder="Description" id="fld-description" ></textarea>
+        </div>
+        
+        <div class="color-section">            
+            <div class="color-section-selector bgcolor-todo"></div>
+            <div class="color-section-selector bgcolor-wip"></div>
+            <div class="color-section-selector bgcolor-test"></div>
+            <div class="color-section-selector bgcolor-done"></div>
+            
+        </div>
+    </div>
 
     <div class="card-container">
         <div class="card">
@@ -38,21 +60,6 @@
                 If you still find it hard. Try solving blind folded.
             </div>
             
-        </div>
-    </div>
-
-    <!--Floating Windows-->
-    <div class="card-edit">
-        <div class="text-section">
-            <input type="text" id="fld-title">
-            <textarea id="fld-description" ></textarea>
-        </div>
-        
-        <div class="color-section">
-            <div class="color-section-selector color-todo"></div>
-            <div class="color-section-selector color-wip"></div>
-            <div class="color-section-selector color-test"></div>
-            <div class="color-section-selector color-done"></div>
         </div>
     </div>
 

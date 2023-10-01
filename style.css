@@ -7,6 +7,10 @@
 body {
     background-color: hsl(175,42%,50%);
     color:hsl(300,20%,99%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    
 }
 
 .logo-section {
@@ -21,38 +25,51 @@ body {
     gap:40px;
     justify-content: left;
     align-items: center;
-    border: 0.25px solid hsl(175, 48%, 38%);
+    
     
 }
 
 .filter-section {
-    border: 1px solid;
     display: flex;
-    gap:5px;
+    gap:50px;
     align-items: center;
-    border-radius: 5px;
-}
-.filter-component {
-    width: 40px;
-    height: 20px;
-    background-color: azure;
-    margin:10px 5px;
-    border-radius: 3px;
+    margin-left: 40px;
+    font-size: 2rem;
+    border-bottom: 1px solid hsl(175, 48%, 38%);
+    padding-bottom: 10px;
 }
 
+
+
 .color-todo {
-    background-color: hsl(300,20%,99%);
+    color: hsl(300,20%,99%);
 }
 
 .color-wip {
-    background-color: hsl(39,99%,72%);
+    color: hsl(39,99%,72%);
 }
 
 .color-test {
-    background-color: hsl(251,43%,57%);
+    color: hsl(251,43%,57%);
 }
 
 .color-done {
+    color: hsl(81,82%,68%);   
+}
+
+.bgcolor-todo {
+    background-color: hsl(300,20%,99%);
+}
+
+.bgcolor-wip {
+    background-color: hsl(39,99%,72%);
+}
+
+.bgcolor-test {
+    background-color: hsl(251,43%,57%);
+}
+
+.bgcolor-done {
     background-color: hsl(81,82%,68%);   
 }
 
@@ -63,24 +80,25 @@ body {
     align-items: center;
 }
 
-.icon {
+.btn-main{
+    padding: 6px;
     border: 1px solid azure;
-    width: 40px;
     height: 40px;
     text-align: center;
-    font-size: 2rem;
-    line-height: inherit;
+    font-size: 1.3rem;
+    border-radius: 10px;
     
 }
 
-.icon:hover {
+.btn-main:hover {
     cursor: pointer;
     background-color:aquamarine;
 }
 
 .card-edit {
-    width: 560px;
-    height: 400px;
+    text-align: center;
+    width: 460px;
+    height: 380px;
 
     
     background-color: hsl(175, 40%, 46%);
@@ -90,60 +108,84 @@ body {
     padding: 10px;
 
     display: none;
-    column-gap: 3px;
-
+    flex-direction: column;
+    row-gap: 30px;
+    
+    
     position: absolute;
+
     left:30vw;
     top:20vh;
 }
 
-.text-section {
-    
-    width: 90%;
-    height: 100%;
-    padding: 5px;
+.card-edit span {
+    font-size: 2rem;
+}
 
+.text-section {
+    width: 100%;
+    height: 75%;
+    padding: 5px;
+    
 }
 
 #fld-title {
-    height: 30px;
+    height: 40px;
     width:100%;
     margin-bottom: 3px;
 
+    border: none;
+    border-radius: 5px;
     font-size: larger;
     font-weight: bolder;
+
+    background-color: hsl(175,42%,50%);
+    padding-left: 5px;
+    
+}
+
+#fld-title::placeholder {
+    color: white;
 }
 
 #fld-description {
     width: 100%;
-    height: 90%;
+    height: 70%;
     resize: none;
 
+    border: none;
+    border-radius: 5px;
     font-size: large;
+
+    background-color: hsl(175,42%,50%);
+    padding-left: 5px;
     
     
     
-    
+}
+
+#fld-description::placeholder {
+    color:white;
 }
 
 
 .color-section {
-    
-    width: 10%;
-
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+    column-gap: 30px;
     align-items: center;
+    padding-left: 20PX;
     
 }
 
 .color-section-selector {
-    height: 50px;
-    width: 50px;
-    border-radius: 3px;
-    margin: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    
 }
+
+
 
 .card-container {
     width:100%;
@@ -202,4 +244,15 @@ body {
 
     font-size: 1.1rem;
     
+}
+
+@media  (max-width:400px) {
+
+    .card-edit {
+        width:80%;
+        left:0px;
+    }
+
+
+
 }
