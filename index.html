@@ -44,23 +44,32 @@
         </div>
         
         <div class="color-section">            
-            <div class="color-section-selector bgcolor-todo"></div>
-            <div class="color-section-selector bgcolor-wip"></div>
-            <div class="color-section-selector bgcolor-test"></div>
-            <div class="color-section-selector bgcolor-done"></div>
+            <div value="todo" class="color-section-selector color-section-selector-active bgcolor-todo"></div>
+            <div value="wip" class="color-section-selector bgcolor-wip"></div>
+            <div value="test" class="color-section-selector bgcolor-test"></div>
+            <div value="done" class="color-section-selector bgcolor-done"></div>
+            <button class="btn-save">
+                Save
+            </button>
             
         </div>
     </div>
 
     <div class="card-container">
+        
+        <!--
         <div class="card">
-            <div class="colorbar">WIP</div>
-            <div class="title">Solve LeetCode</div>
-            <div class="description">Solve atleast 4 problems. You must solve hard problems.
-                If you still find it hard. Try solving blind folded.
-            </div>
+            <div class="colorbar bgcolor-test ###">##tasktype##</div>
+            <div class="title">##ttle##</div>
+            <div class="description">##desc##</div>
             
+            <div class="tool-section">
+                <img id="btn-delete-card" width="11%" src="./Assets/icons8-delete.svg" >
+                <img src="./Assets/icons8-edit.svg" width="11%" alt="" id="btn-edit-card">
+            </div>
         </div>
+        -->
+        
     </div>
 
     <script src="index.js"></script>
